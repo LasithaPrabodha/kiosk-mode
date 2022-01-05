@@ -9,8 +9,10 @@ const KioskMode = core.registerPlugin('KioskMode', {
 });
 
 class KioskModeWeb extends core.WebPlugin {
-    async echo(options) {
-        console.log('ECHO', options);
+    async enable(options) {
+        return options;
+    }
+    async disable(options) {
         return options;
     }
 }

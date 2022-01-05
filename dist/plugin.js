@@ -6,8 +6,10 @@ var capacitorKioskMode = (function (exports, core) {
     });
 
     class KioskModeWeb extends core.WebPlugin {
-        async echo(options) {
-            console.log('ECHO', options);
+        async enable(options) {
+            return options;
+        }
+        async disable(options) {
             return options;
         }
     }

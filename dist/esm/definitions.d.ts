@@ -1,5 +1,10 @@
 export interface KioskModePlugin {
-    echo(options: {
+    enable(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
+    disable(options: {
         value: string;
     }): Promise<{
         value: string;

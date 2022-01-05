@@ -6,7 +6,7 @@
     "tags": [],
     "methods": [
       {
-        "name": "echo",
+        "name": "enable",
         "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
         "parameters": [
           {
@@ -19,7 +19,23 @@
         "tags": [],
         "docs": "",
         "complexTypes": [],
-        "slug": "echo"
+        "slug": "enable"
+      },
+      {
+        "name": "disable",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "disable"
       }
     ],
     "properties": []

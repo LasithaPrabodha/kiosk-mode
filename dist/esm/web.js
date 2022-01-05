@@ -1,7 +1,9 @@
 import { WebPlugin } from '@capacitor/core';
 export class KioskModeWeb extends WebPlugin {
-    async echo(options) {
-        console.log('ECHO', options);
+    async enable(options) {
+        return options;
+    }
+    async disable(options) {
         return options;
     }
 }
